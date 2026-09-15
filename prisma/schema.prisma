@@ -1,0 +1,67 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Article {
+  id             String        @id @default(cuid())
+  title          String
+  slug           String        @unique
+  excerpt        String
+  content        String        @db.Text
+  coverImage     String?
+  category       String
+  author         String        @default("Equipe CA Cursos")
+  glyph          String        @default("📝")
+  featured       Boolean       @default(false)
+  readingTime    Int           @default(5)
+  seoTitle       String?
+  seoDescription String?
+  status         ArticleStatus @default(DRAFT)
+  publishedAt    DateTime?
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  @@index([status, publishedAt])
+  @@index([slug])
+  @@index([category])
+}
+
+model Product {
+  id          String        @id @default(cuid())
+  name        String
+  slug        String        @unique
+  description String        @db.Text
+  price       Float
+  compareAt   Float?
+  image       String?
+  category    String        @default("Geral")
+  featured    Boolean       @default(false)
+  status      ArticleStatus @default(DRAFT)
+  buttonLabel String        @default("Quero este produto")
+  buttonUrl   String?
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  @@index([status, featured])
+  @@index([slug])
+  @@index([category])
+}
+
+enum ArticleStatus {
+  DRAFT
+  PUBLISHED
+}
