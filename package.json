@@ -1,7 +1,7 @@
 {
   "name": "cacursos-backend",
   "version": "1.0.0",
-  "description": "API CA Cursos — blog e autenticação admin",
+  "description": "API CA Cursos  -  blog e autenticação admin",
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
