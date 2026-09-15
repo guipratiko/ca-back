@@ -1,14 +1,11 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
-import path from "path";
-import { fileURLToPath } from "url";
 import authRoutes from "./routes/auth.js";
 import articleRoutes from "./routes/articles.js";
 import productRoutes from "./routes/products.js";
-import uploadRoutes, { uploadRoot } from "./routes/upload.js";
+import uploadRoutes from "./routes/upload.js";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 const PORT = Number(process.env.PORT || 8787);
 
@@ -33,7 +30,6 @@ app.use(
 );
 
 app.use(express.json({ limit: "10mb" }));
-app.use("/uploads", express.static(uploadRoot));
 
 app.get("/health", (_req, res) => {
   res.json({ status: "ok", service: "cacursos-blog-api" });
@@ -54,5 +50,5 @@ app.use((_req, res) => {
 
 app.listen(PORT, () => {
   console.log(`CA Cursos API rodando na porta ${PORT}`);
-  console.log(`Uploads: ${uploadRoot}`);
+  console.log(`Uploads: MidiaService (${process.env.MEDIA_SERVICE_URL || "não configurado"})`);
 });
