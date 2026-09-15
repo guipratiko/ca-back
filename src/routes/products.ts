@@ -20,6 +20,7 @@ const productSchema = z.object({
   status: z.enum(["DRAFT", "PUBLISHED"]).optional(),
   buttonLabel: z.string().optional(),
   buttonUrl: z.string().nullable().optional(),
+  reference: z.string().min(1).max(80).nullable().optional(),
 });
 
 function generateSlug(name: string): string {
@@ -116,6 +117,7 @@ router.post("/", authMiddleware, async (req: AuthRequest, res: Response) => {
         status,
         buttonLabel: data.buttonLabel || "Quero este produto",
         buttonUrl: data.buttonUrl ?? null,
+        reference: data.reference?.trim() || null,
       },
     });
 

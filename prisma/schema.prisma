@@ -54,12 +54,14 @@ model Product {
   status      ArticleStatus @default(DRAFT)
   buttonLabel String        @default("Quero este produto")
   buttonUrl   String?
+  reference   String?
   createdAt   DateTime      @default(now())
   updatedAt   DateTime      @updatedAt
 
   @@index([status, featured])
   @@index([slug])
   @@index([category])
+  @@index([reference])
 }
 
 enum ArticleStatus {
