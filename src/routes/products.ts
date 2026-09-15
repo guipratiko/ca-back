@@ -55,13 +55,22 @@ async function resolveCategoryFields(input: {
 }): Promise<{ categoryId: string | null; category: string }> {
   if (input.categoryId) {
     const cat = await prisma.category.findUnique({ where: { id: input.categoryId } });
-    if (!cat) throw Object.assign(new Error("Categoria inválida"), { status: 400 });
+    if (!cat) {
+      const err = new Error("Categoria inválida");
+      (err as Error & { status: number }).status = 400;
+      throw err;
+    }
     return { categoryId: cat.id, category: cat.name };
   }
   if (input.categoryId === null) {
     return { categoryId: null, category: input.category?.trim() || "Geral" };
   }
   return { categoryId: null, category: input.category?.trim() || "Geral" };
+}
+
+function httpErrorMessage(error: unknown, fallback: string): string {
+  if (error instanceof Error && error.message) return error.message;
+  return fallback;
 }
 
 router.get("/", async (req, res: Response) => {
@@ -182,8 +191,8 @@ router.post("/", authMiddleware, async (req: AuthRequest, res: Response) => {
     if (error instanceof z.ZodError) {
       return res.status(400).json({ error: "Dados inválidos", details: error.errors });
     }
-    if (error && typeof error === "object" && "status" in error) {
-      return res.status(400).json({ error: (error as Error).message });
+    if (error instanceof Error && "status" in error) {
+      return res.status(400).json({ error: httpErrorMessage(error, "Categoria inválida") });
     }
     console.error("Create product error:", error);
     return res.status(500).json({ error: "Erro ao criar produto" });
@@ -245,8 +254,8 @@ router.put("/:id", authMiddleware, async (req: AuthRequest, res: Response) => {
     if (error instanceof z.ZodError) {
       return res.status(400).json({ error: "Dados inválidos", details: error.errors });
     }
-    if (error && typeof error === "object" && "status" in error) {
-      return res.status(400).json({ error: (error as Error).message });
+    if (error instanceof Error && "status" in error) {
+      return res.status(400).json({ error: httpErrorMessage(error, "Categoria inválida") });
     }
     console.error("Update product error:", error);
     return res.status(500).json({ error: "Erro ao atualizar produto" });
