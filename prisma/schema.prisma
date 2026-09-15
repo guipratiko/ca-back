@@ -40,6 +40,19 @@ model Article {
   @@index([category])
 }
 
+model Category {
+  id        String    @id @default(cuid())
+  name      String
+  slug      String    @unique
+  sortOrder Int       @default(0)
+  active    Boolean   @default(true)
+  products  Product[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  @@index([active, sortOrder])
+}
+
 model Product {
   id          String        @id @default(cuid())
   name        String
@@ -50,6 +63,8 @@ model Product {
   image       String?
   images      String[]      @default([])
   category    String        @default("Geral")
+  categoryId  String?
+  categoryRef Category?     @relation(fields: [categoryId], references: [id], onDelete: SetNull)
   featured    Boolean       @default(false)
   status      ArticleStatus @default(DRAFT)
   buttonLabel String        @default("Quero este produto")
@@ -61,7 +76,9 @@ model Product {
   @@index([status, featured])
   @@index([slug])
   @@index([category])
+  @@index([categoryId])
   @@index([reference])
+  @@index([price])
 }
 
 enum ArticleStatus {
