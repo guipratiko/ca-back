@@ -48,6 +48,7 @@ model Product {
   price       Float
   compareAt   Float?
   image       String?
+  images      String[]      @default([])
   category    String        @default("Geral")
   featured    Boolean       @default(false)
   status      ArticleStatus @default(DRAFT)

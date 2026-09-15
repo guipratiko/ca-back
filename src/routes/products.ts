@@ -3,7 +3,7 @@ import slugify from "slugify";
 import { z } from "zod";
 import { prisma } from "../lib/prisma.js";
 import { authMiddleware, AuthRequest } from "../middleware/auth.js";
-import { ArticleStatus } from "@prisma/client";
+import { ArticleStatus, Prisma } from "@prisma/client";
 
 const router = Router();
 
@@ -14,6 +14,7 @@ const productSchema = z.object({
   price: z.number().nonnegative(),
   compareAt: z.number().nonnegative().nullable().optional(),
   image: z.string().nullable().optional(),
+  images: z.array(z.string().min(1)).optional(),
   category: z.string().min(2).optional(),
   featured: z.boolean().optional(),
   status: z.enum(["DRAFT", "PUBLISHED"]).optional(),
@@ -23,6 +24,12 @@ const productSchema = z.object({
 
 function generateSlug(name: string): string {
   return slugify(name, { lower: true, strict: true, locale: "pt" });
+}
+
+function normalizeImages(images?: string[] | null, image?: string | null): string[] {
+  const list = [...(images || [])].map((u) => u.trim()).filter(Boolean);
+  if (image?.trim() && !list.includes(image.trim())) list.unshift(image.trim());
+  return [...new Set(list)];
 }
 
 async function resolveUniqueSlug(baseSlug: string, excludeId?: string): Promise<string> {
@@ -94,6 +101,7 @@ router.post("/", authMiddleware, async (req: AuthRequest, res: Response) => {
     const slug = await resolveUniqueSlug(data.slug || generateSlug(data.name));
     const status = data.status || "DRAFT";
 
+    const images = normalizeImages(data.images, data.image);
     const product = await prisma.product.create({
       data: {
         name: data.name,
@@ -101,7 +109,8 @@ router.post("/", authMiddleware, async (req: AuthRequest, res: Response) => {
         description: data.description,
         price: data.price,
         compareAt: data.compareAt ?? null,
-        image: data.image ?? null,
+        image: images[0] ?? null,
+        images,
         category: data.category || "Geral",
         featured: data.featured ?? false,
         status,
@@ -132,9 +141,19 @@ router.put("/:id", authMiddleware, async (req: AuthRequest, res: Response) => {
       if (taken) return res.status(409).json({ error: "Slug já está em uso" });
     }
 
+    const patch: Prisma.ProductUpdateInput = { ...data };
+    if (data.images !== undefined || data.image !== undefined) {
+      const images = normalizeImages(
+        data.images ?? existing.images,
+        data.image !== undefined ? data.image : existing.image
+      );
+      patch.images = images;
+      patch.image = images[0] ?? null;
+    }
+
     const product = await prisma.product.update({
       where: { id },
-      data,
+      data: patch,
     });
     return res.json({ product });
   } catch (error) {
