@@ -1,0 +1,112 @@
+[
+  {
+    "slug": "aula-01",
+    "youtubeId": "ScMzIvxBSi4",
+    "title": "Montando sua bancada de assistência técnica do zero",
+    "category": "iniciante",
+    "duration": "18:42",
+    "views": "42 mil",
+    "data": "2026-07-14",
+    "description": "Quais ferramentas comprar primeiro, quanto custa cada item e o que você pode deixar para depois.",
+    "sortOrder": 1
+  },
+  {
+    "slug": "aula-02",
+    "youtubeId": "ScMzIvxBSi4",
+    "title": "Multímetro: as 5 medições que resolvem 80% dos casos",
+    "category": "iniciante",
+    "duration": "26:10",
+    "views": "38 mil",
+    "data": "2026-07-02",
+    "description": "Continuidade, tensão, diodo, resistência e consumo na bancada.",
+    "sortOrder": 2
+  },
+  {
+    "slug": "aula-03",
+    "youtubeId": "ScMzIvxBSi4",
+    "title": "Aparelho não liga: roteiro completo de diagnóstico",
+    "category": "iniciante",
+    "duration": "31:55",
+    "views": "55 mil",
+    "data": "2026-06-20",
+    "description": "Passo a passo em ordem lógica para descobrir a causa sem trocar peça por tentativa.",
+    "sortOrder": 3
+  },
+  {
+    "slug": "aula-04",
+    "youtubeId": "ScMzIvxBSi4",
+    "title": "Como localizar curto na placa usando fonte de bancada",
+    "category": "intermediario",
+    "duration": "24:08",
+    "views": "29 mil",
+    "data": "2026-06-05",
+    "description": "Técnica do álcool isopropílico, leitura de consumo e injeção de tensão.",
+    "sortOrder": 4
+  },
+  {
+    "slug": "aula-05",
+    "youtubeId": "ScMzIvxBSi4",
+    "title": "Introdução ao microscópio para microssolda",
+    "category": "intermediario",
+    "duration": "20:36",
+    "views": "21 mil",
+    "data": "2026-05-22",
+    "description": "Escolha, ajuste, iluminação e postura para começar no nível de placa.",
+    "sortOrder": 5
+  },
+  {
+    "slug": "aula-06",
+    "youtubeId": "ScMzIvxBSi4",
+    "title": "Flash de firmware Samsung sem brickar o aparelho",
+    "category": "iniciante",
+    "duration": "29:14",
+    "views": "33 mil",
+    "data": "2026-05-08",
+    "description": "Identificando o firmware correto, drivers e flash com segurança.",
+    "sortOrder": 6
+  },
+  {
+    "slug": "aula-07",
+    "youtubeId": "ScMzIvxBSi4",
+    "title": "Quanto cobrar por uma troca de tela? Precificação real",
+    "category": "iniciante",
+    "duration": "22:47",
+    "views": "47 mil",
+    "data": "2026-04-25",
+    "description": "Custo da peça, hora de bancada, risco, garantia e margem.",
+    "sortOrder": 7
+  },
+  {
+    "slug": "aula-08",
+    "youtubeId": "ScMzIvxBSi4",
+    "title": "Trocando conector de carga: passo a passo com ar quente",
+    "category": "iniciante",
+    "duration": "27:33",
+    "views": "26 mil",
+    "data": "2026-03-28",
+    "description": "Temperatura, fluxo, remoção, limpeza dos pads e instalação.",
+    "sortOrder": 8
+  },
+  {
+    "slug": "aula-09",
+    "youtubeId": "ScMzIvxBSi4",
+    "title": "Lei de Ohm aplicada ao reparo de celular",
+    "category": "intermediario",
+    "duration": "23:05",
+    "views": "15 mil",
+    "data": "2026-03-12",
+    "description": "Sem fórmula decorada: tensão e corrente na placa, na prática.",
+    "sortOrder": 9
+  },
+  {
+    "slug": "aula-10",
+    "youtubeId": "ScMzIvxBSi4",
+    "title": "Vedação e teste depois do reparo",
+    "category": "iniciante",
+    "duration": "14:28",
+    "views": "20 mil",
+    "data": "2026-02-11",
+    "description": "Materiais, aplicação correta e o teste final de proteção.",
+    "sortOrder": 10
+  }
+]

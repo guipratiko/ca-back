@@ -81,6 +81,27 @@ model Product {
   @@index([price])
 }
 
+/** Vídeo aulas abertas (gratuitas) do site */
+model OpenLesson {
+  id          String        @id @default(cuid())
+  slug        String        @unique
+  title       String
+  description String        @db.Text
+  youtubeId   String
+  category    String
+  duration    String        @default("")
+  views       String        @default("")
+  sortOrder   Int           @default(0)
+  status      ArticleStatus @default(DRAFT)
+  publishedAt DateTime?
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  @@index([status, sortOrder])
+  @@index([slug])
+  @@index([category])
+}
+
 enum ArticleStatus {
   DRAFT
   PUBLISHED

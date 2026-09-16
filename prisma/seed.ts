@@ -84,6 +84,50 @@ async function main() {
     console.log(`Artigo: ${p.slug}`);
   }
 
+  const lessonsPath = path.join(__dirname, "seed-lessons.json");
+  const lessons = JSON.parse(fs.readFileSync(lessonsPath, "utf8")) as Array<{
+    slug: string;
+    youtubeId: string;
+    title: string;
+    category: string;
+    duration: string;
+    views: string;
+    data: string;
+    description: string;
+    sortOrder: number;
+  }>;
+
+  for (const a of lessons) {
+    const publishedAt = a.data ? new Date(`${a.data}T12:00:00.000Z`) : new Date();
+    await prisma.openLesson.upsert({
+      where: { slug: a.slug },
+      update: {
+        title: a.title,
+        description: a.description,
+        youtubeId: a.youtubeId,
+        category: a.category,
+        duration: a.duration,
+        views: a.views,
+        sortOrder: a.sortOrder,
+        status: "PUBLISHED",
+        publishedAt,
+      },
+      create: {
+        slug: a.slug,
+        title: a.title,
+        description: a.description,
+        youtubeId: a.youtubeId,
+        category: a.category,
+        duration: a.duration,
+        views: a.views,
+        sortOrder: a.sortOrder,
+        status: "PUBLISHED",
+        publishedAt,
+      },
+    });
+    console.log(`Aula: ${a.slug}`);
+  }
+
   console.log("Seed concluído.");
 }
 
