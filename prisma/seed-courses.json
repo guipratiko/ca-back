@@ -1,0 +1,726 @@
+[
+  {
+    "slug": "curso-presencial-iniciante",
+    "titulo": "Curso Presencial (Iniciante)",
+    "categoria": "iniciante",
+    "nivel": "Iniciante",
+    "glyph": "📱",
+    "destaque": true,
+    "badge": "Mais procurado",
+    "horas": 40,
+    "aulas": 0,
+    "alunos": 0,
+    "nota": 0,
+    "avaliacoes": 0,
+    "formato": "Presencial · 100% prático",
+    "acesso": "1 ano de acesso ao Curso Online (Iniciante)",
+    "preco": 1999.99,
+    "precoDe": null,
+    "parcelas": "12x de R$ 194,00",
+    "boleto": "Entrada de R$ 1.000,00 + 4 boletos de R$ 350,00",
+    "reserva": "R$ 300,00 via PIX (descontado do total)",
+    "link": null,
+    "resumo": "Para quem nunca encostou numa chave de precisão. 40h de mão na massa, na sua bancada individual, com os equipamentos da escola - você sai sabendo diagnosticar e já pronto pra cobrar pelo primeiro serviço.",
+    "para": [
+      "Iniciantes absolutos, sem experiência prévia",
+      "Quem quer aprender na prática, com bancada individual",
+      "Quem mora em Goiânia ou na região e prefere o presencial"
+    ],
+    "aprende": [
+      "Troca de tela, bateria e conector (os serviços que mais dão dinheiro)",
+      "Reparo de câmera, microfone, alto-falante e carcaça",
+      "Desoxidação e primeiros reparos em placa",
+      "Atualizações e soluções de software",
+      "Identificação de defeitos e diagnóstico dos aparelhos",
+      "Uso de ferramentas profissionais: multímetro, fonte e amperímetro"
+    ],
+    "beneficios": [
+      "Certificado de conclusão",
+      "Garantia de resultado (60 dias)",
+      "1 ano de acesso ao Curso Online (Iniciante)",
+      "Grupo de suporte",
+      "Lista de fornecedores",
+      "Programa de estágio, quando disponível",
+      "Aluno pode trazer aparelho próprio para praticar"
+    ],
+    "turmas": [
+      {
+        "periodo": "Integral",
+        "dias": "Segunda a sexta, 5 dias",
+        "horario": "08:45 às 17:45",
+        "data": "17/08/2026"
+      },
+      {
+        "periodo": "Matutino",
+        "dias": "Segunda a sexta, 10 dias",
+        "horario": "08:45 às 12:45",
+        "data": "17/08/2026"
+      },
+      {
+        "periodo": "Vespertino",
+        "dias": "Segunda a sexta, 10 dias",
+        "horario": "13:45 às 17:45",
+        "data": "17/08/2026"
+      },
+      {
+        "periodo": "Noturno",
+        "dias": "Segunda a sexta, 10 dias",
+        "horario": "18:30 às 22:30",
+        "data": "24/08/2026"
+      },
+      {
+        "periodo": "Intensivo (sábados)",
+        "dias": "5 sábados",
+        "horario": "08:45 às 17:45",
+        "data": "15/08/2026"
+      }
+    ],
+    "modulos": [
+      {
+        "titulo": "O que você vai aprender",
+        "aulas": [
+          [
+            "Troca de tela, bateria e conector",
+            ""
+          ],
+          [
+            "Reparo de câmera, microfone, alto-falante e carcaça",
+            ""
+          ],
+          [
+            "Desoxidação e primeiros reparos em placa",
+            ""
+          ],
+          [
+            "Atualizações e soluções de software",
+            ""
+          ],
+          [
+            "Diagnóstico e identificação de defeitos",
+            ""
+          ],
+          [
+            "Multímetro, fonte e amperímetro na prática",
+            ""
+          ]
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "Preciso ter experiência anterior?",
+        "Não. O curso é para iniciantes absolutos, sem pré-requisitos."
+      ],
+      [
+        "Qual a carga horária?",
+        "40 horas, 100% práticas. Integral e Intensivo: 5 dias/sábados de 8h. Matutino, Vespertino e Noturno: 10 dias de 4h."
+      ],
+      [
+        "Tem certificado?",
+        "Sim, certificado de conclusão."
+      ],
+      [
+        "Como reservo a vaga?",
+        "Reserva de R$ 300,00 via PIX, descontada do valor total. É a única reserva automatizada da CA Cursos."
+      ],
+      [
+        "Tem garantia?",
+        "Sim. Garantia de resultado: meta de faturar R$ 2.000,00 em até 60 dias após a conclusão, com regras de reforço e reembolso se necessário."
+      ]
+    ]
+  },
+  {
+    "slug": "curso-online-iniciante",
+    "titulo": "Curso Online (Iniciante)",
+    "categoria": "iniciante",
+    "nivel": "Iniciante",
+    "glyph": "💻",
+    "destaque": true,
+    "badge": "Online",
+    "horas": 40,
+    "aulas": 0,
+    "alunos": 0,
+    "nota": 0,
+    "avaliacoes": 0,
+    "formato": "100% online · aulas gravadas",
+    "acesso": "1 ano",
+    "preco": 497,
+    "precoDe": null,
+    "parcelas": "12x de R$ 51,40",
+    "link": "https://pay.hotmart.com/F85214527E?off=2awmskv6",
+    "resumo": "O mesmo método do presencial, no seu ritmo. Pra quem não mora em Goiânia ou não pode parar a rotina agora - 1 ano pra assistir, revisar e praticar quando der.",
+    "para": [
+      "Iniciantes, especialmente fora de Goiânia",
+      "Quem precisa de flexibilidade de horário",
+      "Quem quer o mesmo conteúdo do presencial no formato EAD"
+    ],
+    "aprende": [
+      "Troca de tela, bateria e conector",
+      "Reparo de câmera, microfone, alto-falante e carcaça",
+      "Desoxidação e primeiros reparos em placa",
+      "Atualizações e soluções de software",
+      "Diagnóstico dos aparelhos",
+      "Uso de multímetro, fonte e amperímetro"
+    ],
+    "beneficios": [
+      "Certificado de conclusão",
+      "Grupo de suporte",
+      "Lista de fornecedores",
+      "Garantia de resultado",
+      "1 ano de acesso"
+    ],
+    "modulos": [
+      {
+        "titulo": "Conteúdo (mesmo do presencial)",
+        "aulas": [
+          [
+            "Troca de tela, bateria e conector",
+            ""
+          ],
+          [
+            "Reparo de câmera, microfone, alto-falante e carcaça",
+            ""
+          ],
+          [
+            "Desoxidação e primeiros reparos em placa",
+            ""
+          ],
+          [
+            "Atualizações e soluções de software",
+            ""
+          ],
+          [
+            "Diagnóstico e identificação de defeitos",
+            ""
+          ],
+          [
+            "Ferramentas profissionais na prática",
+            ""
+          ]
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "É o mesmo conteúdo do presencial?",
+        "Sim. O Curso Online Iniciante tem o mesmo conteúdo do Curso Presencial Iniciante."
+      ],
+      [
+        "Por quanto tempo tenho acesso?",
+        "1 ano de acesso."
+      ],
+      [
+        "Tem certificado e garantia?",
+        "Sim. Certificado de conclusão e garantia de resultado."
+      ],
+      [
+        "Como me matriculo?",
+        "Matrícula direta pelo link de pagamento, sem reserva."
+      ]
+    ]
+  },
+  {
+    "slug": "curso-intermediario-presencial",
+    "titulo": "Curso Intermediário (Presencial)",
+    "categoria": "intermediario",
+    "nivel": "Intermediário",
+    "glyph": "🔧",
+    "destaque": true,
+    "badge": "Presencial",
+    "horas": 0,
+    "aulas": 0,
+    "alunos": 0,
+    "nota": 0,
+    "avaliacoes": 0,
+    "formato": "Presencial · ministrado por Rafael · turmas em formação",
+    "acesso": "Quem faz o presencial ganha acesso ao Intermediário Online",
+    "preco": 2500,
+    "precoDe": null,
+    "parcelas": "12x de R$ 243,52",
+    "link": null,
+    "resumo": "O curso que separa quem troca tela de quem conserta placa. Leitura de esquema, microssolda e reballing pra você resolver o que hoje manda pra assistência autorizada - e cobrar por isso.",
+    "para": [
+      "Quem já concluiu o Curso Presencial (Iniciante)",
+      "Quem já possui experiência prática equivalente",
+      "Quem precisa resolver casos complexos que hoje recusa ou repassa"
+    ],
+    "aprende": [
+      "Leitura de esquemas elétricos",
+      "Uso avançado da fonte de bancada",
+      "Diagnóstico com multímetro",
+      "Microssolda, reballing e jumper",
+      "Reconstrução de trilhas",
+      "Diagnóstico de circuitos em placas Android e iPhone"
+    ],
+    "beneficios": [
+      "Certificado de conclusão",
+      "Grupo de suporte",
+      "Acesso ao Curso Intermediário Online",
+      "Garantia de resultado"
+    ],
+    "modulos": [
+      {
+        "titulo": "O que você vai aprofundar",
+        "aulas": [
+          [
+            "Leitura de esquemas elétricos",
+            ""
+          ],
+          [
+            "Uso avançado da fonte de bancada",
+            ""
+          ],
+          [
+            "Diagnóstico com multímetro",
+            ""
+          ],
+          [
+            "Microssolda, reballing e jumper",
+            ""
+          ],
+          [
+            "Reconstrução de trilhas",
+            ""
+          ],
+          [
+            "Diagnóstico em placas Android e iPhone",
+            ""
+          ]
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "Preciso ter feito o Iniciante?",
+        "Sim, ou ter experiência prática equivalente."
+      ],
+      [
+        "Quando são as turmas?",
+        "Turmas em formação nos formatos Integral e Sábados. Confirme datas no WhatsApp."
+      ],
+      [
+        "Como me matriculo?",
+        "A matrícula é feita com o atendimento humano. Fale conosco no WhatsApp."
+      ],
+      [
+        "Este curso é o Board Repair?",
+        "Não. São cursos diferentes. Intermediário Presencial: R$ 2.500. Board Repair Android: R$ 2.400."
+      ]
+    ]
+  },
+  {
+    "slug": "curso-intermediario-online",
+    "titulo": "Curso Intermediário Online",
+    "categoria": "intermediario",
+    "nivel": "Intermediário",
+    "glyph": "💻",
+    "destaque": true,
+    "badge": "Online",
+    "horas": 0,
+    "aulas": 0,
+    "alunos": 0,
+    "nota": 0,
+    "avaliacoes": 0,
+    "formato": "100% online · aulas gravadas",
+    "acesso": "1 ano",
+    "preco": 997,
+    "precoDe": null,
+    "parcelas": "12x de R$ 103,11",
+    "link": "https://pay.hotmart.com/I86632000J",
+    "resumo": "O conteúdo completo do Intermediário presencial, gravado, pra você assistir quantas vezes precisar até o reballing sair de primeira.",
+    "para": [
+      "Quem já tem experiência prévia em manutenção",
+      "Quem prefere ou precisa do formato online",
+      "Quem busca o conteúdo avançado de placa à distância"
+    ],
+    "aprende": [
+      "Leitura de esquemas elétricos",
+      "Uso avançado da fonte de bancada",
+      "Diagnóstico com multímetro",
+      "Microssolda, reballing e jumper",
+      "Reconstrução de trilhas",
+      "Diagnóstico de circuitos em placas Android e iPhone"
+    ],
+    "beneficios": [
+      "Suporte no mesmo grupo do curso presencial",
+      "1 ano de acesso",
+      "Garantia de resultado"
+    ],
+    "modulos": [
+      {
+        "titulo": "Conteúdo (mesmo do Intermediário presencial)",
+        "aulas": [
+          [
+            "Leitura de esquemas elétricos",
+            ""
+          ],
+          [
+            "Fonte de bancada avançada",
+            ""
+          ],
+          [
+            "Diagnóstico com multímetro",
+            ""
+          ],
+          [
+            "Microssolda, reballing e jumper",
+            ""
+          ],
+          [
+            "Reconstrução de trilhas",
+            ""
+          ],
+          [
+            "Placas Android e iPhone",
+            ""
+          ]
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "É o mesmo conteúdo do Intermediário presencial?",
+        "Sim."
+      ],
+      [
+        "Por quanto tempo tenho acesso?",
+        "1 ano."
+      ],
+      [
+        "Como me matriculo?",
+        "Matrícula direta pelo link de pagamento, sem reserva."
+      ]
+    ]
+  },
+  {
+    "slug": "board-repair-android",
+    "titulo": "Board Repair Android",
+    "categoria": "avancado",
+    "nivel": "Avançado",
+    "glyph": "🔬",
+    "destaque": true,
+    "badge": "Turma confirmada",
+    "horas": 50,
+    "aulas": 0,
+    "alunos": 0,
+    "nota": 0,
+    "avaliacoes": 0,
+    "formato": "Presencial · 5 dias corridos · professor convidado",
+    "acesso": null,
+    "preco": 2400,
+    "precoDe": null,
+    "parcelas": "até 12x no cartão (juros da operadora)",
+    "link": null,
+    "resumo": "Especialização em placas Android para técnicos que já trabalham com manutenção. Turma de 21/09/2026 a 25/09/2026, das 09:00 às aprox. 19:00.",
+    "para": [
+      "Técnicos que já trabalham com manutenção",
+      "Quem deseja se especializar em placas Android"
+    ],
+    "aprende": [
+      "Dia 1: Imagem, touch e iluminação, com diagnóstico raiz, esquemático, osciloscópio e prática",
+      "Dia 2: Carregamento, câmeras e áudio (tensões, DATA/CLK e linhas MIPI)",
+      "Dia 3: Rádio frequência e Wi-Fi, com leitura de esquemático",
+      "Dia 4: Microssoldagem completa, técnicas de solda e troca de CPU",
+      "Dia 5: Inicialização full, consumo na fonte, linhas de comando e comunicação CPU/memória"
+    ],
+    "beneficios": [
+      "Certificado de conclusão",
+      "Grupo de suporte",
+      "Garantia de resultado"
+    ],
+    "turmas": [
+      {
+        "periodo": "Turma confirmada",
+        "dias": "21/09/2026 a 25/09/2026",
+        "horario": "09:00 às aprox. 19:00",
+        "data": "21/09/2026"
+      }
+    ],
+    "modulos": [
+      {
+        "titulo": "Grade dos 5 dias",
+        "aulas": [
+          [
+            "Dia 1 · Imagem, touch e iluminação",
+            ""
+          ],
+          [
+            "Dia 2 · Carregamento, câmeras e áudio",
+            ""
+          ],
+          [
+            "Dia 3 · Rádio frequência e Wi-Fi",
+            ""
+          ],
+          [
+            "Dia 4 · Microssoldagem completa e CPU",
+            ""
+          ],
+          [
+            "Dia 5 · Inicialização full",
+            ""
+          ]
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "É o mesmo que o Intermediário Presencial?",
+        "Não. São cursos, preços e conteúdos diferentes. Board Repair: R$ 2.400. Intermediário: R$ 2.500."
+      ],
+      [
+        "Quando é a turma?",
+        "21/09/2026 a 25/09/2026, das 09:00 às aproximadamente 19:00."
+      ],
+      [
+        "Como me matriculo?",
+        "Matrícula com o atendimento humano. Fale no WhatsApp."
+      ],
+      [
+        "Parcelamento?",
+        "Até 12x no cartão, com juros da operadora, pago a partir do primeiro dia de aula."
+      ]
+    ]
+  },
+  {
+    "slug": "curso-santos",
+    "titulo": "Curso Santos · Reparo Avançado em Placas de iPhone",
+    "categoria": "avancado",
+    "nivel": "Avançado",
+    "glyph": "🍎",
+    "destaque": true,
+    "badge": "Eagle Team",
+    "horas": 0,
+    "aulas": 0,
+    "alunos": 0,
+    "nota": 0,
+    "avaliacoes": 0,
+    "formato": "Presencial · Professor Santos (Eagle Team)",
+    "acesso": null,
+    "preco": 2500,
+    "precoDe": null,
+    "parcelas": "Consulte no atendimento",
+    "precoNota": "Nível 1 e 2: R$ 2.500 · Nível 3: R$ 2.500 · Pacote completo: R$ 4.800",
+    "reserva": "Sinal de R$ 500,00 para reservar vaga",
+    "link": null,
+    "resumo": "Especialização em placas de iPhone com o Professor Santos (Eagle Team). Nível 1 e 2: 31/08 a 03/09/2026. Nível 3: 04/09 a 07/09/2026.",
+    "para": [
+      "Técnicos que já trabalham com manutenção",
+      "Quem deseja se especializar em placas de iPhone"
+    ],
+    "aprende": [
+      "Conteúdo detalhado disponível em PDF exclusivo do Curso Santos",
+      "Nível 1 e 2: 31/08/2026 a 03/09/2026, 09:00 às 19:00 (1h de almoço)",
+      "Nível 3: 04/09/2026 a 07/09/2026, 09:00 às 19:00 (1h de almoço)"
+    ],
+    "beneficios": [
+      "Certificado de conclusão",
+      "Grupo de suporte",
+      "Garantia de resultado",
+      "PDF exclusivo com o conteúdo detalhado"
+    ],
+    "turmas": [
+      {
+        "periodo": "Nível 1 e 2",
+        "dias": "31/08/2026 a 03/09/2026",
+        "horario": "09:00 às 19:00",
+        "data": "31/08/2026"
+      },
+      {
+        "periodo": "Nível 3",
+        "dias": "04/09/2026 a 07/09/2026",
+        "horario": "09:00 às 19:00",
+        "data": "04/09/2026"
+      }
+    ],
+    "modulos": [
+      {
+        "titulo": "Etapas",
+        "aulas": [
+          [
+            "Nível 1 e 2 (um único curso) · 31/08 a 03/09/2026",
+            ""
+          ],
+          [
+            "Nível 3 · 04/09 a 07/09/2026",
+            ""
+          ],
+          [
+            "Pacote completo com desconto de R$ 100 por etapa",
+            ""
+          ]
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "Qual o preço?",
+        "Nível 1 e 2: R$ 2.500. Nível 3: R$ 2.500. Pacote completo (1, 2 e 3): R$ 4.800."
+      ],
+      [
+        "Tem sinal?",
+        "Sim. Sinal de R$ 500,00 para reservar vaga (diferente da reserva de R$ 300 do Iniciante presencial)."
+      ],
+      [
+        "É o mesmo que o Board Repair?",
+        "Não. Curso Santos é iPhone (datas 31/08 a 07/09). Board Repair é Android (21/09 a 25/09), R$ 2.400."
+      ],
+      [
+        "Quanto rende um reparo de placa de iPhone?",
+        "Referência de mercado: cerca de R$ 400 (repasse) a R$ 600 (cliente final)."
+      ],
+      [
+        "Como me matriculo?",
+        "Matrícula com o atendimento humano. Fale no WhatsApp."
+      ]
+    ]
+  },
+  {
+    "slug": "encontro-tecnicos-2026",
+    "titulo": "Encontro de Técnicos · 3ª Edição 2026",
+    "categoria": "eventos",
+    "nivel": "Todos os níveis",
+    "glyph": "🎤",
+    "destaque": false,
+    "badge": "Evento",
+    "horas": 0,
+    "aulas": 0,
+    "alunos": 0,
+    "nota": 0,
+    "avaliacoes": 0,
+    "formato": "Presencial · Centro de Convenções de Goiânia",
+    "acesso": null,
+    "preco": 600,
+    "precoDe": null,
+    "parcelas": "6x de R$ 103,69 no cartão",
+    "boleto": "4x de R$ 162,50 (total R$ 650,00)",
+    "link": null,
+    "resumo": "Evento de 3 dias com palestras, demonstrações técnicas, networking e área de expositores. 04/12/2026 a 06/12/2026, das 09:00 às 19:00.",
+    "para": [
+      "Profissionais e estudantes da manutenção de celulares",
+      "Quem quer networking, palestras e demonstrações técnicas"
+    ],
+    "aprende": [
+      "Palestras técnicas",
+      "Demonstrações na prática",
+      "Networking com outros técnicos",
+      "Área de expositores"
+    ],
+    "beneficios": [
+      "Entrada nos três dias",
+      "Palestras",
+      "Certificado",
+      "Acesso aos estandes",
+      "Camiseta oficial",
+      "Sorteios"
+    ],
+    "turmas": [
+      {
+        "periodo": "Passaporte 3 Dias",
+        "dias": "04/12/2026 a 06/12/2026",
+        "horario": "09:00 às 19:00",
+        "data": "04/12/2026"
+      }
+    ],
+    "modulos": [
+      {
+        "titulo": "Programação geral",
+        "aulas": [
+          [
+            "Palestras e demonstrações técnicas",
+            ""
+          ],
+          [
+            "Networking e área de expositores",
+            ""
+          ],
+          [
+            "Sorteios e camiseta oficial",
+            ""
+          ]
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "Onde é o evento?",
+        "Centro de Convenções de Goiânia."
+      ],
+      [
+        "Qual o valor do ingresso?",
+        "Passaporte 3 Dias: R$ 600,00. Cartão até 6x de R$ 103,69. Boleto: 4x de R$ 162,50 (total R$ 650,00)."
+      ],
+      [
+        "O que está incluso?",
+        "Entrada nos três dias, palestras, certificado, acesso aos estandes, camiseta oficial e sorteios."
+      ]
+    ]
+  },
+  {
+    "slug": "troca-de-telas-lucrativas",
+    "titulo": "Troca de Telas Lucrativas",
+    "categoria": "entrada",
+    "nivel": "Iniciante",
+    "glyph": "📺",
+    "destaque": false,
+    "badge": "Entrada",
+    "horas": 0,
+    "aulas": 0,
+    "alunos": 0,
+    "nota": 0,
+    "avaliacoes": 0,
+    "formato": "100% online · 7 módulos",
+    "acesso": "1 ano, com atualizações incluídas",
+    "preco": 49.9,
+    "precoDe": null,
+    "parcelas": "Pagamento único",
+    "link": "https://pay.hotmart.com/R90092704K",
+    "resumo": "Treinamento online exclusivo sobre troca de telas, do zero. Opção de entrada para quem ainda não consegue investir no curso Iniciante completo.",
+    "para": [
+      "Quem quer começar só com troca de telas",
+      "Quem ainda não consegue pagar o Curso Iniciante, nem parcelado"
+    ],
+    "aprende": [
+      "Troca de tela de qualquer celular, do zero",
+      "7 módulos com várias aulas em cada um"
+    ],
+    "beneficios": [
+      "1 ano de acesso com atualizações",
+      "Grupo exclusivo no Telegram",
+      "Upgrade para o Curso Online Iniciante por R$ 299 após conclusão (via atendimento)"
+    ],
+    "modulos": [
+      {
+        "titulo": "Formato",
+        "aulas": [
+          [
+            "7 módulos com várias aulas",
+            ""
+          ],
+          [
+            "Aulas gravadas, 100% online",
+            ""
+          ],
+          [
+            "Atualizações incluídas no período de acesso",
+            ""
+          ]
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "Tem a garantia de resultado dos cursos principais?",
+        "Não. Este produto não tem a garantia de 60 dias / R$ 2.000."
+      ],
+      [
+        "Posso migrar para o Online Iniciante depois?",
+        "Sim. Quem concluir pode migrar para o Curso Online Iniciante por R$ 299 (valor normal R$ 497), pedindo no grupo do Telegram."
+      ],
+      [
+        "É o curso principal?",
+        "Não. É uma opção de entrada de baixo risco, oferecida quando o Iniciante completo não cabe no orçamento."
+      ]
+    ]
+  }
+]

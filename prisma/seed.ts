@@ -128,6 +128,110 @@ async function main() {
     console.log(`Aula: ${a.slug}`);
   }
 
+  const coursesPath = path.join(__dirname, "seed-courses.json");
+  const courses = JSON.parse(fs.readFileSync(coursesPath, "utf8")) as Array<{
+    slug: string;
+    titulo: string;
+    categoria: string;
+    nivel: string;
+    glyph: string;
+    destaque: boolean;
+    badge?: string;
+    horas: number;
+    aulas: number;
+    alunos: number;
+    nota: number;
+    avaliacoes: number;
+    formato: string;
+    acesso?: string | null;
+    preco: number;
+    precoDe?: number | null;
+    parcelas?: string | null;
+    boleto?: string | null;
+    reserva?: string | null;
+    precoNota?: string | null;
+    link?: string | null;
+    resumo: string;
+    para?: string[];
+    aprende?: string[];
+    beneficios?: string[];
+    turmas?: unknown[];
+    modulos?: unknown[];
+    faq?: unknown[];
+  }>;
+
+  let sortOrder = 1;
+  for (const c of courses) {
+    await prisma.course.upsert({
+      where: { slug: c.slug },
+      update: {
+        title: c.titulo,
+        category: c.categoria,
+        level: c.nivel,
+        glyph: c.glyph || "📱",
+        badge: c.badge || null,
+        featured: !!c.destaque,
+        hours: c.horas || 0,
+        lessons: c.aulas || 0,
+        students: c.alunos || 0,
+        rating: c.nota || 0,
+        reviews: c.avaliacoes || 0,
+        format: c.formato || "",
+        access: c.acesso ?? null,
+        price: c.preco,
+        compareAt: c.precoDe ?? null,
+        installments: c.parcelas ?? null,
+        boleto: c.boleto ?? null,
+        deposit: c.reserva ?? null,
+        priceNote: c.precoNota ?? null,
+        link: c.link ?? null,
+        summary: c.resumo,
+        forWho: c.para || [],
+        learns: c.aprende || [],
+        benefits: c.beneficios || [],
+        classes: c.turmas || [],
+        modules: c.modulos || [],
+        faq: c.faq || [],
+        sortOrder,
+        status: "PUBLISHED",
+      },
+      create: {
+        slug: c.slug,
+        title: c.titulo,
+        category: c.categoria,
+        level: c.nivel,
+        glyph: c.glyph || "📱",
+        badge: c.badge || null,
+        featured: !!c.destaque,
+        hours: c.horas || 0,
+        lessons: c.aulas || 0,
+        students: c.alunos || 0,
+        rating: c.nota || 0,
+        reviews: c.avaliacoes || 0,
+        format: c.formato || "",
+        access: c.acesso ?? null,
+        price: c.preco,
+        compareAt: c.precoDe ?? null,
+        installments: c.parcelas ?? null,
+        boleto: c.boleto ?? null,
+        deposit: c.reserva ?? null,
+        priceNote: c.precoNota ?? null,
+        link: c.link ?? null,
+        summary: c.resumo,
+        forWho: c.para || [],
+        learns: c.aprende || [],
+        benefits: c.beneficios || [],
+        classes: c.turmas || [],
+        modules: c.modulos || [],
+        faq: c.faq || [],
+        sortOrder,
+        status: "PUBLISHED",
+      },
+    });
+    console.log(`Curso: ${c.slug}`);
+    sortOrder += 1;
+  }
+
   console.log("Seed concluído.");
 }
 

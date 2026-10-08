@@ -102,6 +102,48 @@ model OpenLesson {
   @@index([category])
 }
 
+/** Catálogo de cursos do site */
+model Course {
+  id          String        @id @default(cuid())
+  slug        String        @unique
+  title       String
+  category    String
+  level       String        @default("Iniciante")
+  glyph       String        @default("📱")
+  badge       String?
+  featured    Boolean       @default(false)
+  hours       Int           @default(0)
+  lessons     Int           @default(0)
+  students    Int           @default(0)
+  rating      Float         @default(0)
+  reviews     Int           @default(0)
+  format      String        @default("")
+  access      String?
+  price       Float
+  compareAt   Float?
+  installments String?
+  boleto      String?
+  deposit     String?
+  priceNote   String?
+  link        String?
+  summary     String        @db.Text
+  forWho      Json          @default("[]")
+  learns      Json          @default("[]")
+  benefits    Json          @default("[]")
+  classes     Json          @default("[]")
+  modules     Json          @default("[]")
+  faq         Json          @default("[]")
+  sortOrder   Int           @default(0)
+  status      ArticleStatus @default(DRAFT)
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  @@index([status, featured, sortOrder])
+  @@index([slug])
+  @@index([category])
+  @@index([price])
+}
+
 enum ArticleStatus {
   DRAFT
   PUBLISHED

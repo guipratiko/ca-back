@@ -6,6 +6,7 @@ import articleRoutes from "./routes/articles.js";
 import productRoutes from "./routes/products.js";
 import categoryRoutes from "./routes/categories.js";
 import lessonRoutes from "./routes/lessons.js";
+import courseRoutes from "./routes/courses.js";
 import uploadRoutes from "./routes/upload.js";
 
 const app = express();
@@ -46,6 +47,7 @@ app.use("/api/articles", articleRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/categories", categoryRoutes);
 app.use("/api/lessons", lessonRoutes);
+app.use("/api/courses", courseRoutes);
 app.use("/api/upload", uploadRoutes);
 
 app.use((_req, res) => {
