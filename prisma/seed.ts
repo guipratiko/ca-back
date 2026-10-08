@@ -232,6 +232,22 @@ async function main() {
     sortOrder += 1;
   }
 
+  const { DEFAULT_HOME_HERO, DEFAULT_PRODUCTS_BANNER } = await import(
+    "../src/routes/settings.js"
+  );
+
+  await prisma.siteSetting.upsert({
+    where: { key: "homeHero" },
+    update: {},
+    create: { key: "homeHero", value: DEFAULT_HOME_HERO },
+  });
+  await prisma.siteSetting.upsert({
+    where: { key: "productsBanner" },
+    update: {},
+    create: { key: "productsBanner", value: DEFAULT_PRODUCTS_BANNER },
+  });
+  console.log("Settings: homeHero + productsBanner");
+
   console.log("Seed concluído.");
 }
 
